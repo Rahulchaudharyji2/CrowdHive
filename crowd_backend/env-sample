@@ -1,0 +1,7 @@
+JWT_SECRET = <secret-key>
+
+MONGODB_URI = <Your Database URL>
+
+mid = "TESTPAYTMMID12345" (https://dashboard.paytm.com/next/apikeys)
+key = "12345678901234567890123456789012 " (https://dashboard.paytm.com/next/apikeys)
+website =  WEBSTAGING
