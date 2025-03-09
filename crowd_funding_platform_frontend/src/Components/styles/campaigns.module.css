@@ -1,0 +1,165 @@
+.campaignContainer {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 850px) {
+  .campaignContainer {
+    width: 90%;
+  }
+}
+
+.allContent {
+  background-color: rgb(21, 35, 56);
+  cursor: default;
+  border-radius: 12px 12px 0 0;
+  padding: 15px;
+}
+
+/* Campaign Content */
+.campaignContent {
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+/* Hide scrollbar in Webkit-based browsers */
+.campaignContent::-webkit-scrollbar {
+  width: 5px;
+}
+
+.campaignContent::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* Title Styles */
+.title {
+  display: -webkit-box;
+  max-width: 800px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+/* Description */
+.description {
+  display: -webkit-box;
+  max-width: 800px;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .description {
+    font-size: 13px;
+  }
+}
+
+/* Image Styles */
+.imageContainer {
+  padding: 9px;
+  margin: 0;
+  max-height: 220px;
+}
+
+.imgCentre {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  border-radius: 8%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 5%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 850px) {
+  .image {
+    padding: 2%;
+  }
+}
+
+/* Bottom Section */
+.bottomSection {
+  background-color: rgb(4, 7, 18);
+  width: 100%;
+  padding: 1.4% 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottomSection {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* Donate Now Section */
+.DonateNow {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .DonateNow {
+    font-size: 14px;
+  }
+}
+
+/* Required Amount */
+.requiredAmount {
+  font-size: 15px;
+  text-align: center;
+}
+
+.requiredAmount p {
+  margin: 0;
+}
+
+/* Disabled Styles */
+.disabled .allContent {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.disabled .bottomSection {
+  background-color: rgba(203, 203, 203, 1);
+}
+
+.disabled img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
